@@ -1,29 +1,20 @@
-# Student ETL Pipeline with Scheduling
+# ETL
 
-This project implements a simple ETL (Extract, Transform, Load) pipeline for student data using Python. It reads student data from a CSV file, processes it to determine pass/fail status and grades, saves the results to new CSV files, and loads the data into an SQLite database. The ETL job is scheduled to run automatically every day at 2:10 AM.
-
----
+This repository contains a Python ETL (Extract, Transform, Load) pipeline that processes student data from a CSV file, categorizes students based on their marks, assigns grades, saves the processed data to CSV files, and loads the data into an SQLite database. The ETL job is automated to run daily at a scheduled time using the `schedule` library.
 
 ## Features
 
-- Reads student data from CSV
-- Calculates pass/fail status and grades
-- Saves processed data to separate CSV files for passed and failed students
-- Loads data into an SQLite database (`students.db`)
-- Automates ETL execution using the `schedule` library
+- Extract student data from CSV
+- Transform data: determine pass/fail and assign grades
+- Load data into CSV files and SQLite database
+- Automate ETL execution daily at 2:10 AM
 
----
-## Requirements
+## Installation
 
-- Python 3.x
-- pandas
-- schedule
-- sqlite3 (standard Python library)
-
-Install required packages using pip:
+Make sure you have Python 3.x installed. Install required packages with:
 
 ``bash
 pip install pandas schedule
 ---
 ## Author
-Abinash Rout — abinashrout584@gmail.com
+Abinash Rout — https://github.com/abinashrout548
